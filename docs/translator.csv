@@ -1,0 +1,164 @@
+eng,0,address,Address
+eng,0,country,Country
+eng,0,dob,Date of Birth (dd mm yyyy)
+eng,0,docidtype,ID Document Type
+eng,0,docid,Number
+eng,0,female,Female
+eng,0,firstName,First Name
+eng,0,gender,Gender
+eng,0,house,House No. / Name
+eng,0,keyNote,These fields are required
+eng,0,language,Language
+eng,0,languageName,English
+eng,0,lastName,Last Name
+eng,0,male,Male
+eng,0,middleName,Middle Name
+eng,0,phone,Phone Number
+eng,0,state,State
+eng,0,selectSuffix,Select Suffix
+eng,0,selectCountry,Select Country
+eng,0,selectType,Select Type
+eng,0,street,Street
+eng,0,zip,Postal / Area Code
+eng,1,postCodeLength,2
+francais,0,address,Adresse
+francais,0,city,Ville
+francais,0,country,Pays
+francais,0,dob,Date de Naisance (jj mm aaaa)
+francais,0,docidtype,Type ID Document
+francais,0,docid,Nombre
+francais,0,female,Femme
+francais,0,firstName,Prénom
+francais,0,gender,Sexe
+francais,0,house,Nombre/Nom de Maison
+francais,0,keyNote,Mandataire
+francais,0,language,Langue
+francais,0,languageName,Francais
+francais,0,lastName,Nom
+francais,0,male,Homme
+francais,0,middleName,Deuxième Prénom
+francais,0,phone,Téléphone
+francais,0,selectSuffix,Sélect Suffixe
+francais,0,selectCountry,Sélect Pays
+francais,0,selectType,Sélect Type
+francais,0,state,État
+francais,0,street,Rue
+francais,0,zip,Code Postal
+francais,1,postCodeLength,3
+espanol,0,address,Dirección
+espanol,0,city,Ciudad
+espanol,0,country,Pais
+espanol,0,dob,Fecha de Nacimiento (dd mm aaaa)
+espanol,0,docidtype,Tipo ID Documento
+espanol,0,docid,Numero
+espanol,0,female,Femenino
+espanol,0,firstName,Nombre
+espanol,0,gender,Sexo
+espanol,0,house,Nombre / Número de Casa
+espanol,0,keyNote,Necesario
+espanol,0,language,Idioma
+espanol,0,languageName,Español
+espanol,0,lastName,Apellido
+espanol,0,male,Masculino
+espanol,0,middleName,Segundo Nombre
+espanol,0,phone,Teléfono
+espanol,0,selectSuffix,Elegir Sufijo
+espanol,0,selectCountry,Elegir Pais
+espanol,0,selectType,Elegir Tipo
+espanol,0,state,Estado
+espanol,0,street,Calle
+espanol,0,zip,Código Postal
+espanol,1,postCodeLength,4
+chinese,0,address,地址
+chinese,0,city,城市/镇
+chinese,0,country,国家
+chinese,0,dob,出生日期
+chinese,0,docidtype,证件类型
+chinese,0,docid,号码
+chinese,0,female,女
+chinese,0,firstName,名
+chinese,0,gender,性别
+chinese,0,house,门牌号
+chinese,0,keyNote,必需填写
+chinese,0,language,语言
+chinese,0,languageName,中文
+chinese,0,lastName,姓
+chinese,0,male,男
+chinese,0,middleName,0
+chinese,0,phone,电话号码
+chinese,0,selectSuffix,0
+chinese,0,selectCountry,0
+chinese,0,selectType,0
+chinese,0,state,省份
+chinese,0,street,街道
+chinese,0,zip,邮编
+chinese,1,postCodeLength,5
+polish,0,address,Adres
+polish,0,city,Miasto
+polish,0,country,Państwo
+polish,0,dob,Data urodzenia
+polish,0,docidtype,Typ Dokumentu
+polish,0,docid,Numer Dokumentu
+polish,0,female,Kobieta
+polish,0,firstName,Imię
+polish,0,gender,Płeć
+polish,0,house,Numer/Nazwa domu.
+polish,0,keyNote,Niezbędny
+polish,0,language,Język
+polish,0,languageName,Polski
+polish,0,lastName,Nazwisko
+polish,0,male,Mężczyzna
+polish,0,middleName,Drugie imię
+polish,0,phone,Numer Telefonu
+polish,0,state,Stan
+polish,0,street,Ulica
+polish,0,zip,Kod pocztowy
+polish,1,postCodeLength,6
+tamil,0,address,முகவரி
+tamil,0,city,மாநகர்/பட்டணம்
+tamil,0,country,நாடு
+tamil,0,dob,பிறந்த நாள்
+tamil,0,docid,பத்திரம் எண்ணிக்கை
+tamil,0,female,பெண்
+tamil,0,firstName,முதல் பெயர்
+tamil,0,gender,பால்
+tamil,0,house,வீட்டு எண்
+tamil,0,docidtype,பத்திரம் வகை
+tamil,0,language,மொழி
+tamil,0,languageName,தமிழ்
+tamil,0,male,ஆண்
+tamil,0,middleName,நடுப் பெயர்
+tamil,0,phone,தொலைபேசி எண்
+tamil,0,zip,தபால் இலக்கம்
+tamil,0,keyNote,கட்டாயம் (பூர்த்தி செய்ய வேண்டிய தகவல் களம்)
+tamil,0,selectCountry,நாடு - தேர்வு செய்யவும்
+tamil,0,selectSuffix,பின்சேர்க்கை - தேர்வு செய்யவும்
+tamil,0,selectType,வகை - தேர்வு செய்யவும்
+tamil,0,state,மாநிலம்
+tamil,0,street,வீதி
+tamil,0,lastName,குடும்பப் பெயர்
+tamil ,1,postCodeLength,6
+lithuanian,0,address,Adresas
+lithuanian,0,city,Miestas
+lithuanian,0,country,Šalis
+lithuanian,0,dob,Gimimo diena
+lithuanian,0,docid,Dokumento numeris
+lithuanian,0,female,Moteris
+lithuanian,0,firstName,Vardas
+lithuanian,0,gender,Lytis
+lithuanian,0,house,Namo nr. / Pavadinimas
+lithuanian,0,docidtype,Tapatybės dokumento tipas
+lithuanian,0,language,Kalba
+lithuanian,0,languageName,Lietuvių
+lithuanian,0,male,Vyras
+lithuanian,0,middleName,Antras vardas
+lithuanian,0,phone,Telefono numeris
+lithuanian,0,zip,Pašto kodas
+lithuanian,0,keyNote,Privaloma (nurodytus laukus būtina užpildyti)
+lithuanian,0,selectCountry,Pasirinkite šalį
+lithuanian,0,selectSuffix,Pasirinkite sufiksą
+lithuanian,0,selectType,Pasirinkite tipą
+lithuanian,0,state,Apskritis
+lithuanian,0,street,Gatvė
+lithuanian,0,lastName,Pavardė
+lithuanian,1,postCodeLength,6

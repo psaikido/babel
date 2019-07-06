@@ -1,0 +1,565 @@
+<!DOCTYPE HTML>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+
+<link rel="stylesheet" href="babel.css" />
+
+</head>
+<body>
+
+<form action="" id="babelForm" method="post">
+
+
+<div id="inputFormWrap">
+	<div id="international">
+
+		<div class="formTitle">
+			<span class="hilight">International</span> ID Check
+			<div class="hr">&nbsp;</div>
+		</div>
+
+		<input type="hidden" name="Dateofbirth" value="" />
+
+		<div class="formLabel" id="translator_language">
+			Language	
+		</div>
+		<div class="formValue">
+			<div id="language">
+				<select id="langSelect" onchange="translatePage();">
+				</select>
+			</div>
+		</div>
+
+		<div class="hr">&nbsp;</div>
+
+		<div class="formLabel required" id="translator_gender">
+			Gender:
+		</div>
+		<div class="formValue required">
+			<div id="gender">
+				<input type="radio" name="gender" value="M" checked /><span id="translator_male">Male</span>
+				<input type="radio" name="gender" value="F" /><span id="translator_female">Female</span>
+			</div>
+		</div>
+
+		<div class="formLabel required" id="translator_firstName">
+			First Name:
+		</div>
+		<div class="formValue required">
+			<input type="text" name="" id="" class="inputLong" value="" maxlength="30" />
+			<span class="asterisk">*</span>
+		</div>
+
+		<div class="formLabel" id="translator_middleName">
+			Middle Name:
+		</div>
+		<div class="formValue">
+			<input type="text" name="" id="" class="inputLong" value="" maxlength="30" />
+		</div>
+
+		<div class="formLabel required" id="translator_lastName">
+			Last Name:
+		</div>
+		<div class="formValue required">
+			<input type="text" name="Surname" id="Surname" class="inputLong" value="" maxlength="30" />
+			<span class="asterisk">*</span>
+		</div>
+
+		<div class="formLabel">
+			&nbsp;
+		</div>
+		<div class="formValue">
+			<select name="Suffix">
+				<option value="" id="translator_selectSuffix">Select Suffix</option>
+				<option value="Junior">Junior</option>
+				<option value="Senior">Senior</option>
+				<option value="I">I</option>
+				<option value="II">II</option>
+				<option value="III">III</option>
+			</select>
+		</div>
+
+		<div class="formLabel" id="translator_dob">
+			Date of Birth (dd mm yyyy):
+		</div>
+		<div class="formValue dob">
+			<input type="text" name="dobDay" id="dobDay" class="dateTwo" value="" maxlength="2" />
+			<input type="text" name="dobMonth" id="dobMonth" class="dateTwo" value="" maxlength="2" />
+			<input type="text" name="dobYear" id="dobYear" class="dateFour" value="" maxlength="4" />
+		</div>
+
+		<div class="formLabel" id="translator_house">
+			House No. / Name:
+		</div>
+		<div class="formValue">
+			<input type="text" name="HouseNumber" id="HouseNumber" class="inputLong" value="" maxlength="30" />
+		</div>
+
+		<div class="formLabel" id="translator_street">
+			Street:
+		</div>
+		<div class="formValue">
+			<input type="text" name="StreetName" id="StreetName" class="inputLong" value="" maxlength="50" />
+		</div>
+
+		<div class="formLabel" id="translator_address">
+			Address:
+		</div>
+		<div class="formValue">
+			<input type="text" name="CompleteAddress" id="CompleteAddress" class="inputLong" value="" maxlength="25" />
+		</div>
+
+		<div class="formLabel" id="translator_city">
+			City / Town:
+		</div>
+		<div class="formValue">
+			<input type="text" name="City" id="City" class="inputLong" value="" maxlength="25" />
+		</div>
+
+		<div class="formLabel" id="translator_state">
+			State:
+		</div>
+		<div class="formValue">
+			<input type="text" name="State" id="State" class="inputLong" value="" maxlength="25" />
+		</div>
+
+		<div class="formLabel required" id="translator_zip">
+			Postal / Area Code:
+		</div>
+		<div class="formValue required">
+			<input type="text" name="" id="" class="inputShort inputLongHint" value="" maxlength="8" />
+				<span class="asterisk">**</span>
+		</div>
+
+		<div class="formLabel" id="translator_phone">
+			Phone Number:
+		</div>
+		<div class="formValue">
+			<input type="text" name="Phonenumber" id="Phonenumber" class="inputLong inputLongHint" value="" maxlength="8" />
+		</div>
+
+		<div class="hr dotted">&nbsp;</div>
+
+		<div class="formLabel required" id="translator_country">
+			Country:
+		</div>
+		<div class="formValue required">
+			<select name="Country" id="countryDDL" onchange="jsShowHide();">
+				<option value="" id="translator_selectCountry">Select Country</option>
+				<option value="AD">Andorra</option>
+				<option value="AF">Afghanistan</option>
+				<option value="AX">Aland Islands</option>
+				<option value="AL">Albania</option>
+				<option value="DZ">Algeria</option>
+				<option value="AS">American Samoa</option>
+				<option value="AO">Angola</option>
+				<option value="AI">Anguilla</option>
+				<option value="AQ">Antarctica</option>
+				<option value="AG">Antigua and Barbuda</option>
+				<option value="AR">Argentina</option>
+				<option value="AM">Armenia</option>
+				<option value="AW">Aruba</option>
+				<option value="AU">Australia</option>
+				<option value="AT">Austria</option>
+				<option value="AZ">Azerbaijan</option>
+				<option value="BH">Bahrain</option>
+				<option value="BD">Bangladesh</option>
+				<option value="BB">Barbados</option>
+				<option value="BY">Belarus</option>
+				<option value="BE">Belgium</option>
+				<option value="BZ">Belize</option>
+				<option value="BJ">Benin</option>
+				<option value="BM">Bermuda</option>
+				<option value="BT">Bhutan</option>
+				<option value="BO">Bolivia</option>
+				<option value="BA">Bosnia and Herzegovina</option>
+				<option value="BW">Botswana</option>
+				<option value="BV">Bouvet Island</option>
+				<option value="BR">Brazil</option>
+				<option value="IO">British Indian Ocean Territory</option>
+				<option value="VG">British Virgin Islands</option>
+				<option value="BN">Brunei</option>
+				<option value="BG">Bulgaria</option>
+				<option value="BF">Burkina Faso</option>
+				<option value="MM">Burma|Myanmar</option>
+				<option value="BI">Burundi</option>
+				<option value="KH">Cambodia</option>
+				<option value="CM">Cameroon</option>
+				<option value="CA">Canada</option>
+				<option value="CV">Cape Verde</option>
+				<option value="KY">Cayman Islands</option>
+				<option value="CF">Central African Republic</option>
+				<option value="TD">Chad</option>
+				<option value="CL">Chile</option>
+				<option value="CX">Christmas Island</option>
+				<option value="CC">Cocos (Keeling) Islands</option>
+				<option value="CO">Colombia</option>
+				<option value="KM">Comoros</option>
+				<option value="CK">Cook Islands</option>
+				<option value="CR">Costa Rica</option>
+				<option value="CI">Cote d'Ivoire</option>
+				<option value="HR">Croatia</option>
+				<option value="CU">Cuba</option>
+				<option value="CY">Cyprus</option>
+				<option value="CZ">Czech Republic</option>
+				<option value="CD">Democratic Republic of the Congo|Congo, the Democratic Republic of the</option>
+				<option value="DK">Denmark</option>
+				<option value="DJ">Djibouti</option>
+				<option value="DM">Dominica</option>
+				<option value="DO">Dominican Republic</option>
+				<option value="TL">East Timor|Timor-Leste</option>
+				<option value="EC">Ecuador</option>
+				<option value="EG">Egypt</option>
+				<option value="SV">El Salvador</option>
+				<option value="GQ">Equatorial Guinea</option>
+				<option value="ER">Eritrea</option>
+				<option value="EE">Estonia</option>
+				<option value="ET">Ethiopia</option>
+				<option value="FK">Falkland Islands|Falkland Islands (Malvinas)</option>
+				<option value="FO">Faroe Islands</option>
+				<option value="FM">Federated States of Micronesia|Micronesia, Federated States of</option>
+				<option value="FJ">Fiji</option>
+				<option value="FI">Finland</option>
+				<option value="FR">France</option>
+				<option value="GF">French Guiana</option>
+				<option value="PF">French Polynesia</option>
+				<option value="TF">French Southern and Antarctic Lands|French Southern Territories</option>
+				<option value="GA">Gabon</option>
+				<option value="GE">Georgia (country)|Georgia</option>
+				<option value="DE">Germany</option>
+				<option value="GH">Ghana</option>
+				<option value="GI">Gibraltar</option>
+				<option value="GR">Greece</option>
+				<option value="GL">Greenland</option>
+				<option value="GD">Grenada</option>
+				<option value="GP">Guadeloupe</option>
+				<option value="GU">Guam</option>
+				<option value="GT">Guatemala</option>
+				<option value="GG">Guernsey</option>
+				<option value="GW">Guinea-Bissau</option>
+				<option value="GN">Guinea</option>
+				<option value="GY">Guyana</option>
+				<option value="HT">Haiti</option>
+				<option value="HM">Heard Island and McDonald Islands</option>
+				<option value="HN">Honduras</option>
+				<option value="HK">Hong Kong</option>
+				<option value="HU">Hungary</option>
+				<option value="IS">Iceland</option>
+				<option value="IN">India</option>
+				<option value="ID">Indonesia</option>
+				<option value="IR">Iran|Iran, Islamic Republic of</option>
+				<option value="IQ">Iraq</option>
+				<option value="IM">Isle of Man</option>
+				<option value="IL">Israel</option>
+				<option value="IT">Italy</option>
+				<option value="JM">Jamaica</option>
+				<option value="JP">Japan</option>
+				<option value="JE">Jersey</option>
+				<option value="JO">Jordan</option>
+				<option value="KZ">Kazakhstan</option>
+				<option value="KE">Kenya</option>
+				<option value="KI">Kiribati</option>
+				<option value="KW">Kuwait</option>
+				<option value="KG">Kyrgyzstan</option>
+				<option value="LA">Laos|Lao People's Democratic Republic</option>
+				<option value="LV">Latvia</option>
+				<option value="LB">Lebanon</option>
+				<option value="LS">Lesotho</option>
+				<option value="LR">Liberia</option>
+				<option value="LY">Libya|Libyan Arab Jamahiriya</option>
+				<option value="LI">Liechtenstein</option>
+				<option value="LT">Lithuania</option>
+				<option value="LU">Luxembourg</option>
+				<option value="MO">Macau|Macao</option>
+				<option value="MG">Madagascar</option>
+				<option value="MW">Malawi</option>
+				<option value="MY">Malaysia</option>
+				<option value="MV">Maldives</option>
+				<option value="ML">Mali</option>
+				<option value="MT">Malta</option>
+				<option value="MH">Marshall Islands</option>
+				<option value="MQ">Martinique</option>
+				<option value="MR">Mauritania</option>
+				<option value="MU">Mauritius</option>
+				<option value="YT">Mayotte</option>
+				<option value="MX">Mexico</option>
+				<option value="MD">Moldova|Moldova, Republic of</option>
+				<option value="MC">Monaco</option>
+				<option value="MN">Mongolia</option>
+				<option value="ME">Montenegro</option>
+				<option value="MS">Montserrat</option>
+				<option value="MA">Morocco</option>
+				<option value="MZ">Mozambique</option>
+				<option value="NA">Namibia</option>
+				<option value="NR">Nauru</option>
+				<option value="NP">Nepal</option>
+				<option value="AN">Netherlands Antilles</option>
+				<option value="NL">Netherlands</option>
+				<option value="NC">New Caledonia</option>
+				<option value="NZ">New Zealand</option>
+				<option value="NI">Nicaragua</option>
+				<option value="NE">Niger</option>
+				<option value="NG">Nigeria</option>
+				<option value="NU">Niue</option>
+				<option value="NF">Norfolk Island</option>
+				<option value="KP">North Korea|Korea, Democratic People's Republic of</option>
+				<option value="MP">Northern Mariana Islands</option>
+				<option value="NO">Norway</option>
+				<option value="OM">Oman</option>
+				<option value="PK">Pakistan</option>
+				<option value="PW">Palau</option>
+				<option value="PS">Palestinian territories|Palestinian Territory, Occupied</option>
+				<option value="PA">Panama</option>
+				<option value="PG">Papua New Guinea</option>
+				<option value="PY">Paraguay</option>
+				<option value="CN">People's Republic of China|China</option>
+				<option value="PE">Peru</option>
+				<option value="PH">Philippines</option>
+				<option value="PN">Pitcairn Islands|Pitcairn</option>
+				<option value="PL">Poland</option>
+				<option value="PT">Portugal</option>
+				<option value="PR">Puerto Rico</option>
+				<option value="QA">Qatar</option>
+				<option value="IE">Republic of Ireland|Ireland</option>
+				<option value="MK">Republic of Macedonia|Macedonia, the former Yugoslav Republic of</option>
+				<option value="CG">Republic of the Congo|Congo</option>
+				<option value="RE">Reunion</option>
+				<option value="RO">Romania</option>
+				<option value="RU">Russia|Russian Federation</option>
+				<option value="RW">Rwanda</option>
+				<option value="BL">Saint Barthélemy</option>
+				<option value="SH">Saint Helena</option>
+				<option value="KN">Saint Kitts and Nevis</option>
+				<option value="LC">Saint Lucia</option>
+				<option value="MF">Saint Martin (France)|Saint Martin (French part)</option>
+				<option value="PM">Saint Pierre and Miquelon</option>
+				<option value="VC">Saint Vincent and the Grenadines</option>
+				<option value="WS">Samoa</option>
+				<option value="SM">San Marino</option>
+				<option value="ST">Sao Tome and Principe</option>
+				<option value="SA">Saudi Arabia</option>
+				<option value="SN">Senegal</option>
+				<option value="RS">Serbia</option>
+				<option value="SC">Seychelles</option>
+				<option value="SL">Sierra Leone</option>
+				<option value="SG">Singapore</option>
+				<option value="SK">Slovakia</option>
+				<option value="SI">Slovenia</option>
+				<option value="SB">Solomon Islands</option>
+				<option value="SO">Somalia</option>
+				<option value="ZA">South Africa</option>
+				<option value="GS">South Georgia and the South Sandwich Islands</option>
+				<option value="KR">South Korea|Korea, Republic of</option>
+				<option value="ES">Spain</option>
+				<option value="LK">Sri Lanka</option>
+				<option value="SD">Sudan</option>
+				<option value="SR">Suriname</option>
+				<option value="SJ">Svalbard and Jan Mayen</option>
+				<option value="SZ">Swaziland</option>
+				<option value="SE">Sweden</option>
+				<option value="CH">Switzerland</option>
+				<option value="SY">Syria|Syrian Arab Republic</option>
+				<option value="TW">Taiwan</option>
+				<option value="TJ">Tajikistan</option>
+				<option value="TZ">Tanzania|Tanzania, United Republic of</option>
+				<option value="TH">Thailand</option>
+				<option value="BS">The Bahamas|Bahamas</option>
+				<option value="GM">The Gambia|Gambia</option>
+				<option value="TG">Togo</option>
+				<option value="TK">Tokelau</option>
+				<option value="TO">Tonga</option>
+				<option value="TT">Trinidad and Tobago</option>
+				<option value="TN">Tunisia</option>
+				<option value="TR">Turkey</option>
+				<option value="TM">Turkmenistan</option>
+				<option value="TC">Turks and Caicos Islands</option>
+				<option value="TV">Tuvalu</option>
+				<option value="UG">Uganda</option>
+				<option value="UA">Ukraine</option>
+				<option value="AE">United Arab Emirates</option>
+				<option value="GB">United Kingdom</option>
+				<option value="UM">United States Minor Outlying Islands</option>
+				<option value="VI">United States Virgin Islands|Virgin Islands, U.S.</option>
+				<option value="US">United States</option>
+				<option value="UY">Uruguay</option>
+				<option value="UZ">Uzbekistan</option>
+				<option value="VU">Vanuatu</option>
+				<option value="VA">Vatican City|Holy See (Vatican City State)</option>
+				<option value="VE">Venezuela|Venezuela, Bolivarian Republic of</option>
+				<option value="VN">Vietnam|Viet Nam</option>
+				<option value="WF">Wallis and Futuna</option>
+				<option value="EH">Western Sahara</option>
+				<option value="YE">Yemen</option>
+				<option value="ZM">Zambia</option>
+				<option value="ZW">Zimbabwe</option>
+			</select>
+
+			<span class="asterisk">*</span>
+		</div>
+
+		<div id="IrishCounties" style="display:none;">
+			<div class="formLabel">
+				County:
+			</div>
+			<div class="formValue">
+				<select name="IrelandCountyName" id="IrelandCountyNameDDL">
+					<option value="">(Select County)</option>
+					<option value="Clare">Clare</option>
+					<option value="Cork">Cork</option>
+					<option value="Cavan">Cavan</option>
+					<option value="Carlow">Carlow</option>
+					<option value="Donegal">Donegal</option>
+					<option value="Dublin">Dublin</option>
+					<option value="Galway">Galway</option>
+					<option value="Kildare">Kildare</option>
+					<option value="Kilkenny">Kilkenny</option>
+					<option value="Kerry">Kerry</option>
+					<option value="Longford">Longford</option>
+					<option value="Louth">Louth</option>
+					<option value="Limerick">Limerick</option>
+					<option value="Leitrim">Leitrim</option>
+					<option value="Laois">Laois</option>
+					<option value="Meath">Meath</option>
+					<option value="Monaghan">Monaghan</option>
+					<option value="Mayo">Mayo</option>
+					<option value="Offaly">Offaly</option>
+					<option value="Roscommon">Roscommon</option>
+					<option value="Sligo">Sligo</option>
+					<option value="Tipperary">Tipperary</option>
+					<option value="Waterford">Waterford</option>
+					<option value="Westmeath">Westmeath</option>
+					<option value="Wicklow">Wicklow</option>
+					<option value="Wexford">Wexford</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="formLabel" id="translator_docidtype">
+			ID Document Type:
+		</div>
+		<div class="formValue">
+			<select name="ForeignIDType" id="fidDDL">
+				<option value="" id="translator_selectType">Select Type</option>
+				<option value="1">Passport Registry No.</option>
+				<option value="2">Personal Identification No.</option>
+				<option value="3">Identity Card No.</option>
+				<option value="4">Drivers License No.</option>
+				<option value="8">Travel Document</option>
+				<option value="12">Residence Permit</option>
+				<option value="13">Identity Certificate No.</option>
+				<option value="16">Registro Federal de Contribuyentes</option>
+				<option value="17">Credencial de Elector</option>
+				<option value="19">Social Security No. (USA only)</option>
+				<option value="20">Tax File No. (Australia only)</option>
+			</select>
+		</div>
+
+		<div class="formLabel" id="translator_docid">
+			Foreign ID:
+		</div>
+		<div class="formValue">
+			<input type="text" name="ForeignID" id="ForeignID" class="inputLong" value="" maxlength="30" />
+		</div>
+
+		<div id="US-SSN" style="display:none;">
+			<div class="formLabel">
+				Social Security Number (US Only):
+			</div>
+			<div class="formValue">
+				<input type="text" name="SSN" id="SSN" class="inputLong" value="" maxlength="30" />
+			</div>
+		</div>
+
+		<div id="key">
+			<b>*</b>&nbsp;&nbsp;<span id="translator_keyNote">These fields are required.</span><br />
+			<div id="emerald" style="display:none;"><b>**</b>&nbsp;&nbsp;This field is required unless in the Rep. of Ireland.</div>
+		</div>
+
+	</div>
+
+	<br />
+	<div class="ICPCheckFormInputName leftShift">&nbsp;</div>
+
+	<div class="ICPFormSubmit">
+		<input type="submit" name="run" value="Perform Check" class="ICPButton prePop" onclick="return validate();" />
+	</div>
+	<div class="ICPClear"></div>
+	<input type="hidden" name="level" value="20" />
+
+</div>
+</div>
+
+</form>
+
+<script type="text/javascript">
+// Load language names into the drop down list.
+doLangDdl();
+
+function doLangDdl() {
+	eval("var doDdl = document.getElementById('doDdl')");
+	if (doDdl != null) {
+        doDdl.parentNode.removeChild(doDdl);
+        delete doDdl;
+    } 
+
+    var head = document.getElementsByTagName("head")[0];
+    script = document.createElement('script');
+    script.id = 'doDdl';
+    script.type = 'text/javascript';
+    script.src = "/babel/server/langDdl.php";
+    head.appendChild(script);
+}
+
+function translatePage(lang) {
+	eval("var translateScript = document.getElementById('translateScript')");
+	if (translateScript != null) {
+	 translateScript.parentNode.removeChild(translateScript);
+	 delete translateScript;
+	} 
+
+	var lang = document.getElementById('langSelect').value;
+	if (lang.length > 0){
+		var head = document.getElementsByTagName("head")[0];
+		script = document.createElement('script');
+		script.id = 'translateScript';
+		script.type = 'text/javascript';
+		script.src = "/babel/server/translator.php?lang=" + lang;
+		head.appendChild(script);
+	}
+    document.getElementById('langSelect').value = 'espanol';
+}
+
+function jsShowHide() {
+	document.getElementById('IrishCounties').style.display = 'none';
+	document.getElementById('US-SSN').style.display = 'none';
+
+	if (document.getElementById('countryDDL').value == 'IE'){
+		document.getElementById('IrishCounties').style.display = 'block';
+	}
+	if (document.getElementById('countryDDL').value == 'US'){
+		document.getElementById('US-SSN').style.display = 'block';
+	}
+}
+
+function validate() {
+	alert('your validate and submit code goes here');
+}
+
+window.onload = function (){
+    document.getElementById('langSelect').value = 'eng';
+}
+</script>
+
+</body>
+</html>
+
+<!--
+<option value=""> --- </option>
+<option value="eng">English</option>
+<option value="espanol">Español</option>
+<option value="francais">Français</option>
+<option value="chinese">语言</option>
+<option value="polish">Polski</option>
+<option value="tamil">தமிழ் </option>
+-->

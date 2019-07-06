@@ -1,0 +1,131 @@
+#international {
+	border-right:1px solid #d2d2d2;
+	border-bottom:1px solid #d2d2d2;
+	border-left:1px solid #d2d2d2;
+	padding:0 20px 20px 20px;
+	margin:0;
+	width:552px;
+}
+#topBlock {
+	margin:0;
+	padding:0;
+	border-right:1px solid #d2d2d2;
+	height:9px;
+}
+#inputFormWrap #international .formTitle {
+	margin:0;
+	padding:10px 0 0 0;
+}
+#inputFormWrap #international .formTitle .hr {
+	border:none;
+	margin-top:6px;
+}
+#inputFormWrap #international .formTitle .hilight {
+	color:#c93025;
+	margin:0 0 0 40px;
+}
+#inputFormWrap #international .formLabel {
+	color:#555;
+	margin:0 0 10px 40px;
+	padding-left:0;
+	width:273px;
+	font-size:11px;
+	clear:left;
+	float:left;
+}
+#inputFormWrap #international .formLabel.required {
+	color:#c93025;
+}
+#inputFormWrap #international .formValue.required input, 
+#inputFormWrap #international .formValue.required select {
+	color:#c93025;
+	border-top:1px solid #d37e81;
+	border-right:1px solid #e9c9d1;
+	border-bottom:1px solid #e9c9d1;
+	border-left:1px solid #d37e81;
+}
+#inputFormWrap #international .formValue {
+	width:auto;
+	margin:0;
+	padding:0;
+	font-size:11px;
+	float:left;
+}
+#inputFormWrap #international .asterisk {
+	width:10px;
+	color:#c93025;
+	margin:5px 8px 0 0;
+}
+#inputFormWrap #international #IrishCounties .asterisk {
+	color:#d2d2d2;
+	border:1px solid #d2d2d2;
+	padding:1px 3px;
+}
+#inputFormWrap #international .formValue #countryDDL, 
+#inputFormWrap #international .formValue #IrelandCountyNameDDL, 
+#inputFormWrap #international .formValue #fidDDL {
+	width:166px;
+}
+#inputFormWrap #international .formValue.dob {
+	float:none;
+}
+#inputFormWrap #international .formValue input, 
+#inputFormWrap #international .formValue select {
+	border-top:1px solid #a6a6a6;
+	border-right:1px solid #e1e1e1;
+	border-bottom:1px solid #e1e1e1;
+	border-left:1px solid #a6a6a6;
+	font-size:11px;
+}	
+#inputFormWrap #international .formValue #gender input {
+	float:none;
+}
+#inputFormWrap #international .formValue #gender .asterisk {
+	float:none;
+	margin:0 0 0 45px;
+}
+#inputFormWrap #international .formValue #gender {
+	color:#c93025;
+}
+#inputFormWrap #international .hr.dotted {
+	border-bottom:1px dotted #aaa;
+	margin:0 0 15px 0;
+	height:1px;
+}
+#inputFormWrap #international #key {
+	color:#c93025;
+	line-height:25px;
+	border:1px solid #e9c9d1;
+	background-color:#f2e6e9;
+	padding:10px;
+	font-size:10px;
+	margin:10px 0 0 0;
+	clear:both;
+}
+#inputFormWrap .formValue input {
+  float: left;
+  border:1px solid #d7d7d7;
+  margin-right:6px;
+}
+
+#inputFormWrap .formValue input.dateTwo {
+  width:30px;
+}
+#inputFormWrap .formValue input.dateFour {
+  width:40px;
+}
+#inputFormWrap .formValue input.inputTiny {
+  width:66px;
+}
+#inputFormWrap .formValue input.inputTiny.series {
+  float:none;
+}
+#inputFormWrap .formValue input.inputShort {
+  width:100px;
+}
+#inputFormWrap .formValue input.inputLong {
+  width:163px;
+}
+#inputFormWrap .formValue input.inputReallyLong {
+  width:361px;
+}
