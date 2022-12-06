@@ -1,5 +1,4 @@
 <?php
-require('connect.inc.php');
 require('babel.cls.php');
 
 if ($_FILES['datafile']['type'] != 'text/csv'){

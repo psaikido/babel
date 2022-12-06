@@ -1,13 +1,23 @@
 <?php
 class babel {
+    private $mysqli;
+
+    function __construct() {
+        include('config.php');
+        $this->mysqli = new mysqli($dbHost, $dbUser, $dbPassword, $dbName);
+
+        if (mysqli_connect_errno()) {
+            printf("Can't connect to MySQL Server. Errorcode: %s\n", mysqli_connect_error());
+            exit;
+        }
+    }
 
     /* Read a language from the database and make dhtml to change the page */
-    function translator($lang) {
-        global $mysqli;
+    function translator($lang): string {
         $str = '';
 
         $query = 'select * from translator where lang = "'.$lang.'";';
-        $result = $mysqli->query($query);
+        $result = $this->mysqli->query($query);
         if ($result->num_rows > 0){
             while($row = $result->fetch_assoc()){
                 if ($row['type'] == 0){
@@ -32,10 +42,8 @@ class babel {
 
     /* Take an uploaded csv file and add a new language to the database */
     function processLangFile($data) {
-        global $mysqli;
-
         $query = 'DROP TABLE IF EXISTS `translator`;';
-        if ($result = $mysqli->query($query)){
+        if ($result = $this->mysqli->query($query)){
             echo 'table dropped<br />'."\n";
         } else {
             echo 'failed drop: '.$query;
@@ -51,7 +59,7 @@ class babel {
                 PRIMARY KEY  (`id`)
             ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=0 ;';
 
-        if ($result = $mysqli->query($query)){
+        if ($result = $this->mysqli->query($query)){
             echo 'table recreated<br />'."\n";
         } else {
             echo 'failed create: '.$query;
@@ -68,7 +76,7 @@ class babel {
         // Take off the last comma.
         $query = substr($query, 0, -1);
 
-        if ($result = $mysqli->query($query)){
+        if ($result = $this->mysqli->query($query)){
             echo 'data loaded<br />'."\n";
         } else {
             echo 'failed insert: '.$query;
@@ -76,15 +84,13 @@ class babel {
     }
 
     /* This gets the languages for the main drop down list */
-    function langDdl() {
-        global $mysqli;
-
+    function langDdl(): string {
         $query = 'select lang, fieldValue from translator
             where fieldName = "languageName"
             order by lang;';
 
-        $result = $mysqli->query($query);
-        if ($result = $mysqli->query($query)) {
+        $result = $this->mysqli->query($query);
+        if ($result = $this->mysqli->query($query)) {
             $str = "var ddl = document.getElementById('langSelect');";
             for ($x = 0; $x < $result->num_rows; $x++) {
                 $row = $result->fetch_assoc();
